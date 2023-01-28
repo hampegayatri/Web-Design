@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+
+        .wrapper>*{
+            padding: 10px;
+            margin: 10px;
+            flex: 1 100%;
+            border-radius: 10px;
+        }
+
+        .header{
+            background-color: red;
+            height: 120px;
+        }
+
+        .footer{
+            background-color: lightgreen;
+            height: 80px;
+        }
+
+        .main{
+            text-align: left;
+            background: deepskyblue;
+            height: 300px;
+            font-size: 24px;
+        }
+
+        .aside1{
+            background-color: gold;
+        }
+
+        .aside2{
+            background-color: hotpink;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <article class="main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam at deleniti inventore maiores hic rerum ex perspiciatis nesciunt nemo omnis delectus sit, commodi neque soluta vero laboriosam, vel modi?</p>
+        </article>
+        <aside class="aside aside1">
+            <h1>Aside 1</h1>
+        </aside>
+        <aside class="aside aside2">
+            <h1>Aside 2</h1>
+        </aside>
+        <footer class="footer">
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+</html>
